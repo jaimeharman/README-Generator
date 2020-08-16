@@ -2,7 +2,15 @@ const inquirer = require("inquirer");
 
 // array of questions for user
 const questions = [
-
+  "Enter a title",
+  "Enter a description", 
+  "Enter a table of contents",
+  "Enter an installation",
+  "Enter a usage",
+  "Enter a license",
+  "Enter a contributor", 
+  "Enter a test", 
+  "Enter a question"
 ];
 
 // function to write README file
@@ -16,47 +24,47 @@ function init() {
     .prompt([
       {
         type: 'input',
-        message: 'Enter a title',
+        message: questions[0],
         name: 'title'
       },
       {
         type: 'input',
-        message: 'Enter a description',
+        message: questions[1],
         name: 'description'
       },
       {
         type: 'input',
-        message: 'Enter a table of contents',
+        message: questions[2],
         name: 'tableOfContents'
       },
       {
         type: 'input',
-        message: 'Enter an installation',
+        message: questions[3],
         name: 'installation'
       },
       {
         type: 'input',
-        message: 'Enter a usage',
+        message: questions[4],
         name: 'usage'
       },
       {
         type: 'input',
-        message: 'Enter a license',
+        message: questions[5],
         name: 'license'
       },
       {
         type: 'input',
-        message: 'Enter a contributor',
+        message: questions[6],
         name: 'contributors'
       },
       {
         type: 'input',
-        message: 'Enter a test',
+        message: questions[7],
         name: 'tests'
       },
       {
         type: 'input',
-        message: 'Enter a question',
+        message: questions[8],
         name: 'questions'
       }
     ])
