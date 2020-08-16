@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require('fs');
+const generateMarkdown = require("../Develop/utils/generateMarkdown");
 
 // array of questions for user
 const questions = [
@@ -10,38 +11,25 @@ const questions = [
   "Enter a license",
   "Enter a contributor", 
   "Enter a test", 
-  "Enter a question"
+  "Enter a question",
+  "Enter author's email address"
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
   console.log(data)
+  const markup = generateMarkdown(data)
 
-  // Turn data.license into a badge
-
-  // Create a Description section
-
-  // Create a Table of Contents section: containing each section below as a hyperlink
-
-  // Create an Installation section
-
-  // Create a Usage section
-
-  // Create a Contributing section
-
-  // Create a License section
-
-  // Create a Tests section
-
-  // Create a Questions section: link to gitHub profile, instructions on how to contact
-
-  // Create the file with fs.writeFile
+  fs.writeFile(fileName, markup, 'utf8', function(err) {
+    if (err) {
+      console.log(err)
+    } 
+});
 }
 
 // function to initialize program
 function init() {
-    // console.log(process.argv[2])
-    inquirer
+  inquirer
     .prompt([
       {
         type: 'input',
@@ -64,9 +52,10 @@ function init() {
         name: 'usage'
       },
       {
-        type: 'input', // Checkbox to select gitHub license options
+        type: 'list', 
         message: questions[4],
-        name: 'license' 
+        name: 'license', 
+        choices: ["None", "Apache License 2.0", "GNU General Public License v3.0", "MIT License", "BSD 2-Clause 'New' or 'Revised' License", "BSD 3-Clause 'New' or 'Revised' License", "Boost Software License 1.0", "Creative Commons Zero v1.0 Universal", "Eclipse Public License 2.0", "GNU Affero General Public License v3.0", "GNU General Public License v2.0", "GNU Lesser General Public License v2.1", "Mozilla Public License 2.0", "The Unilicense"] 
       },
       {
         type: 'input',
@@ -82,13 +71,15 @@ function init() {
         type: 'input',
         message: questions[7],
         name: 'questions'
+      },
+      {
+        type: 'input',
+        message: questions[8],
+        name: 'author'
       }
-
-      // Ask for author email
     ])
     .then((answers) => {
-      const data = JSON.stringify(answers, null, '  ')
-      writeToFile("README.md", data)
+      writeToFile("README.md", answers)
     });
 }
 
