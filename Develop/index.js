@@ -11,7 +11,6 @@ const questions = [
   "Enter a license",
   "Enter a contributor", 
   "Enter a test", 
-  "Enter a question",
   "Enter author's email address"
 ];
 
@@ -70,11 +69,6 @@ function init() {
       {
         type: 'input',
         message: questions[7],
-        name: 'questions'
-      },
-      {
-        type: 'input',
-        message: questions[8],
         name: 'author'
       }
     ])

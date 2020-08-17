@@ -20,9 +20,8 @@ function generateMarkdown(data) {
   # Tests
   ${data.tests}
   # Questions
-  ${data.questions}
   Have a question? Email me at [${data.author}](mailto:${data.author})
-  `;
+  `
 }
 
 // Turn data.license into a badge
