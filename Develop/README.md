@@ -1,8 +1,8 @@
 
   [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  # title
+  # README.md Generator
   # Description
-  blah blah
+  This will create a README.md file using Node
   # Table of Contents 
   * [Installation](#Installation)
   * [Usage](#Usage)
@@ -10,14 +10,13 @@
   * [Tests](#Tests)
   * [Questions](#Questions)
   # Installation
-  program
+  You can enter an installation here
   # Usage
-  program
+  Node.js
   # Contributing
-  me
+  Me
   # Tests
-  ok
+  Enter test here
   # Questions
-  ?
   Have a question? Email me at [test@test.com](mailto:test@test.com)
   
