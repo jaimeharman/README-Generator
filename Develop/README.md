@@ -1,8 +1,8 @@
 
   [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  # README.md Generator
+  # The README-Generator
   # Description
-  This will create a README.md file using Node
+  This application allows user to input information they want to include in their readme.md file. The application will then create a readme.md file complete with badge license and simple formatting.
   # Table of Contents 
   * [Installation](#Installation)
   * [Usage](#Usage)
@@ -10,13 +10,13 @@
   * [Tests](#Tests)
   * [Questions](#Questions)
   # Installation
-  You can enter an installation here
+  Node.js, VS Code, GitBash/Terminal
   # Usage
-  Node.js
+  (Optional)
   # Contributing
-  Me
+  github.com/jaimeharman
   # Tests
-  Enter test here
+  Enter a test here
   # Questions
-  Have a question? Email me at [test@test.com](mailto:test@test.com)
+  Have a question? Email me at [jaimeharman17@gmail.com](mailto:jaimeharman17@gmail.com)
   
