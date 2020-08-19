@@ -13,12 +13,17 @@ https://drive.google.com/file/d/1actPfi2wLIvK-hG0Yd-jOXiTlHeNuy6d/view?usp=shari
 - Inquirer Package: https://www.npmjs.com/package/inquirer
 
 # This app utilizes: 
+
 - Node.js
 - GitBash
 - VS Code
 - Inquirer Package from NPM
 
-![Image](/assets/screenshots/homeworkwk9-1.png)
-![Image](/assets/screenshots/homeworkwk9-2.png)
-![Image](/assets/screenshots/homeworkwk9-4.png)
-![Image](/assets/screenshots/homeworkwk9-6.png)
+![](/assets/screenshots/homeworkwk9-1.PNG)
+![](/assets/screenshots/homeworkwk9-2.PNG)
+![](/assets/screenshots/homeworkwk9-4.PNG)
+![](/assets/screenshots/homeworkwk9-6.PNG)
+
+Sample of Read Me that is Generated: 
+
+![](/assets/screenshots/readme.PNG)
