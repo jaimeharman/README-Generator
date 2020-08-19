@@ -1,6 +1,5 @@
 # README-Generator
 
-
 # Description
 This is a command-line application that will allow a quick and easy generation of a project README.md file. A README.md file has information about the project: what it's used for, how to use the app, how to install it, how to report issues and how to make contributions so that other developers can use it. 
 
@@ -13,17 +12,18 @@ https://drive.google.com/file/d/1actPfi2wLIvK-hG0Yd-jOXiTlHeNuy6d/view?usp=shari
 - Inquirer Package: https://www.npmjs.com/package/inquirer
 
 # This app utilizes: 
-
 - Node.js
 - GitBash
 - VS Code
 - Inquirer Package from NPM
 
-![](/assets/screenshots/homeworkwk9-1.PNG)
+
+# Screenshots of Project
+![](/assets/screenshots/homeworkwk9-1.png)
 ![](/assets/screenshots/homeworkwk9-2.PNG)
 ![](/assets/screenshots/homeworkwk9-4.PNG)
 ![](/assets/screenshots/homeworkwk9-6.PNG)
 
-Sample of Read Me that is Generated: 
 
-![](/assets/screenshots/readme.PNG)
+# Sample of Read Me that is Generated: 
+![](/assets/screenshots/readme.png)
